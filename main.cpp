@@ -1,17 +1,13 @@
-#include <cstdio>
-#include <fstream>
-#include <iostream>
-#include <string>
-
-#include <opencv2/opencv.hpp>
-
 #include "imgui.h"
-#include "imgui_impl_opengl3.h"
-#include "imgui_impl_sdl.h"
-
-#include <GL/gl3w.h>
-#include <SDL.h>
-
+#include "backends/imgui_impl_glfw.h"
+#include "backends/imgui_impl_opengl3.h"
+#include <stdio.h>
+#define GL_SILENCE_DEPRECATION
+#if defined(IMGUI_IMPL_OPENGL_ES2)
+#include <GLES2/gl2.h>
+#endif
+#include "examples\libs\glfw\include\GLFW\glfw3.h"
+#include <opencv2/opencv.hpp>
 using namespace std;
 
 //---------------------------------------------------------------------
